@@ -1,6 +1,7 @@
-package alzaichsank.com.movielist
+package alzaichsank.com.movielist.view
 
-import android.support.v7.app.AppCompatActivity
+import alzaichsank.com.movielist.R
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
 class MainActivity : AppCompatActivity() {
