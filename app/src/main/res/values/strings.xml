@@ -2,6 +2,9 @@
     <string name="app_name">Saku-Movie™️</string>
     <string name="movie">Movie</string>
     <string name="account">Account</string>
+    <string name="max_rating">/ 10</string>
+    <string name="overview">Overview</string>
+    <string name="release_on">Release on :</string>
     <string-array name="title">
         <item>Avengers: Infinity War</item>
         <item>Bird Box</item>

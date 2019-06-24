@@ -3,6 +3,7 @@ package alzaichsank.com.movielist.view.main.home
 import alzaichsank.com.movielist.R
 import alzaichsank.com.movielist.datasource.MovieData
 import alzaichsank.com.movielist.util.Logger
+import alzaichsank.com.movielist.view.main.home.adapter.MovieAdapter
 import android.annotation.SuppressLint
 import android.content.res.TypedArray
 import android.os.Bundle

@@ -1,16 +1,16 @@
-package alzaichsank.com.movielist.view.main.home
+package alzaichsank.com.movielist.view.main.home.adapter
 
-import alzaichsank.com.movielist.R
 import alzaichsank.com.movielist.datasource.MovieData
 import alzaichsank.com.movielist.util.Logger
+import alzaichsank.com.movielist.view.main.home.detail.DetailActivity
 import android.annotation.SuppressLint
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import kotlinx.android.synthetic.main.item_movie_list.view.*
-
 
 /**
  * Created by alzaichsank on 2019-06-24.
@@ -24,7 +24,7 @@ class MovieAdapter(private val context: Context, private val movieModelArrayList
     @SuppressLint("ViewHolder")
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         val inflater: LayoutInflater = LayoutInflater.from(context)
-        val view: View = inflater.inflate(R.layout.item_movie_list, null)
+        val view: View = inflater.inflate(alzaichsank.com.movielist.R.layout.item_movie_list, null)
         val holder = MovieItemViewHolder()
         holder.bindData(movieData!![position], view)
         return view
@@ -52,6 +52,11 @@ class MovieItemViewHolder {
         viewItem.text_view_rating.text = data.rating
         viewItem.text_view_kategori.text = data.releaseDate
         data.imagePhoto?.let { viewItem.image_view_poster.setImageResource(it) }
+        viewItem.user_layout.setOnClickListener {
+            val moveWithObjectIntent = Intent(viewItem.context, DetailActivity::class.java)
+            moveWithObjectIntent.putExtra(DetailActivity.EXTRA_DATA, data)
+            viewItem.context.startActivity(moveWithObjectIntent)
+        }
     }
 
 }

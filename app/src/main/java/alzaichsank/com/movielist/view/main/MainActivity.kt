@@ -2,9 +2,10 @@ package alzaichsank.com.movielist.view.main
 
 import alzaichsank.com.movielist.R
 import alzaichsank.com.movielist.extensions.disableShiftMode
+import alzaichsank.com.movielist.view.main.account.FragmentAccount
 import alzaichsank.com.movielist.view.main.home.FragmentHome
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
@@ -47,7 +48,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setAccount() {
-        loadFragment(FragmentHome(), FragmentHome.TAG)
+        loadFragment(FragmentAccount(), FragmentAccount.TAG)
     }
 
     private fun loadFragment(fragment: Fragment, tag: String?) {
@@ -56,7 +57,6 @@ class MainActivity : AppCompatActivity() {
         transaction.addToBackStack(null)
         transaction.commit()
     }
-
 
 
 }
