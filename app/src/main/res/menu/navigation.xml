@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_local_movies_grey_24dp"
+        android:title="@string/movie" />
+    <item
+            android:id="@+id/navigation_account"
+            android:icon="@drawable/ic_person_grey24dp"
+            android:title="@string/account" />
+    <!--<item-->
+        <!--android:id="@+id/navigation_coming_soon"-->
+        <!--android:icon="@drawable/ic_movie_soon_24dp"-->
+        <!--android:title="@string/menu_coming_soon" />-->
+    <!--<item-->
+        <!--android:id="@+id/navigation_top_rated"-->
+        <!--android:icon="@drawable/ic_top_rated_grey_24dp"-->
+        <!--android:title="@string/menu_top_rated" />-->
+</menu>

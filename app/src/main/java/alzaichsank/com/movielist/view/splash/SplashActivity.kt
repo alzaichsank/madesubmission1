@@ -1,6 +1,7 @@
-package alzaichsank.com.movielist.view
+package alzaichsank.com.movielist.view.splash
 
 import alzaichsank.com.movielist.R
+import alzaichsank.com.movielist.view.main.MainActivity
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler

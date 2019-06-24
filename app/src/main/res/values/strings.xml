@@ -1,3 +1,49 @@
 <resources>
     <string name="app_name">Saku-Movie™️</string>
+    <string name="movie">Movie</string>
+    <string name="account">Account</string>
+    <string-array name="title">
+        <item>Avengers: Infinity War</item>
+        <item>Bird Box</item>
+        <item>Once Upon a Dead Pool</item>
+        <item>How to Train Your Dragon : Hidden World</item>
+        <item>Dragon Ball Super: Broly</item>
+    </string-array>
+    <string-array name="description">
+        <item>As the Avengers and their allies have continued to protect the world from threats too large for any one
+            hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy,
+            his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his
+            twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate
+            of Earth and existence itself has never been more uncertain.</item>
+        <item>Five years after an ominous unseen presence drives most of society to suicide, a survivor and her two
+            children make a desperate bid to reach safety.</item>
+        <item>A kidnapped Fred Savage is forced to endure Deadpool’s PG-13 rendition of Deadpool 2 as a Princess Bride-esque
+            story that’s full of magic, wonder and zero F’s.</item>
+        <item>As Hiccup fulfills his dream of creating a peaceful dragon utopia, Toothless’ discovery of an untamed,
+            elusive mate draws the Night Fury away. When danger mounts at home and Hiccup’s reign as village chief is
+            tested, both dragon and rider must make impossible decisions to save their kind.</item>
+        <item>As Goku investigates the destruction of the Southern Galaxy, Vegeta is taken to be King of the New Planet
+            Vegeta, and to destroy the Legendary Super Saiyan, Broly.</item>
+    </string-array>
+    <string-array name="release_date">
+        <item>2018–04–25</item>
+        <item>2018–12–13</item>
+        <item>2018–12–11</item>
+        <item>2019–01–03</item>
+        <item>2018–12–14</item>
+    </string-array>
+    <string-array name="rating">
+        <item>8.3</item>
+        <item>7</item>
+        <item>7</item>
+        <item>7.7</item>
+        <item>7.4</item>
+    </string-array>
+    <string-array name="image">
+        <item>@drawable/poster_avengerinfinity</item>
+        <item>@drawable/poster_birdbox</item>
+        <item>@drawable/poster_deadpool</item>
+        <item>@drawable/poster_dragon</item>
+        <item>@drawable/poster_dragonball</item>
+    </string-array>
 </resources>
