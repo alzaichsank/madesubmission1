@@ -18,7 +18,7 @@
         android:background="@drawable/bg_border_black"
         android:foreground="?android:attr/selectableItemBackground"
         android:padding="@dimen/medium_margin"
-        card_view:cardCornerRadius="4dp">
+        card_view:cardCornerRadius="@dimen/_8sdp">
 
         <RelativeLayout
             android:id="@+id/cardRelative"

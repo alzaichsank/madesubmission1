@@ -11,6 +11,7 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import kotlinx.android.synthetic.main.item_movie_list.view.*
 
+
 /**
  * Created by alzaichsank on 2019-06-24.
  */
@@ -22,10 +23,10 @@ class MovieAdapter(private val context: Context, private val movieModelArrayList
 
     @SuppressLint("ViewHolder")
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
-        val holder  = MovieItemViewHolder()
         val inflater: LayoutInflater = LayoutInflater.from(context)
         val view: View = inflater.inflate(R.layout.item_movie_list, null)
-        holder.bindData(movieData!![position],view)
+        val holder = MovieItemViewHolder()
+        holder.bindData(movieData!![position], view)
         return view
     }
 
@@ -49,6 +50,7 @@ class MovieItemViewHolder {
     fun bindData(data: MovieData, viewItem: View) {
         viewItem.text_view_title.text = data.title
         viewItem.text_view_rating.text = data.rating
+        viewItem.text_view_kategori.text = data.releaseDate
         data.imagePhoto?.let { viewItem.image_view_poster.setImageResource(it) }
     }
 

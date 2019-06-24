@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
     <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
         <ListView
+                android:smoothScrollbar="true"
+                android:scrollingCache="false"
+                android:animationCache="false"
                 android:id="@+id/list_view_film"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:clipToPadding="false"
-                android:paddingTop="7dp"
-                android:paddingBottom="16dp"
+                android:paddingTop="@dimen/small_margin"
+                android:paddingBottom="@dimen/medium_margin"
                 android:scrollbars="vertical"/>
     </RelativeLayout>
 
