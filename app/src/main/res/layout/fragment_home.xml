@@ -8,11 +8,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-        <ListView
+        <androidx.recyclerview.widget.RecyclerView
                 android:smoothScrollbar="true"
                 android:scrollingCache="false"
                 android:animationCache="false"
-                android:id="@+id/list_view_film"
+                android:id="@+id/recycler_view_film"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:clipToPadding="false"
