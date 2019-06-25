@@ -11,6 +11,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.GridLayoutManager
 import kotlinx.android.synthetic.main.fragment_home.*
 
 /**
@@ -69,7 +70,15 @@ class FragmentHome : Fragment() {
             Logger.debug("cek data >> ${movieData[i].title}")
         }
         adapterMovie = MovieAdapter(this.context!!, movieData)
-        list_view_film.adapter = adapterMovie
+        recycler_view_film.adapter = adapterMovie
         adapterMovie!!.notifyDataSetChanged()
+        initRecyler()
+    }
+
+    private fun initRecyler() {
+        recycler_view_film.setHasFixedSize(true)
+        recycler_view_film.setLayoutManager(GridLayoutManager(this.context!!, 2))
+        recycler_view_film.setNestedScrollingEnabled(false)
+        recycler_view_film.setAdapter(adapterMovie)
     }
 }
