@@ -31,6 +31,10 @@ class MainActivity : AppCompatActivity() {
                     setToDashboard()
                     true
                 }
+                R.id.navigation_tv_show -> {
+                    setAccount()
+                    true
+                }
                 R.id.navigation_account -> {
                     setAccount()
                     true
